@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: nyc_taxi
+    schema: raw
+    tables:
+      - name: stg_yellow_taxi
+      - name: stg_green_taxi

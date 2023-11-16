@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: curated
+    database: nyc_taxi
+    schema: curated
+    tables:
+      - name: yellow_taxi
+      - name: green_taxi

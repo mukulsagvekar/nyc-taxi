@@ -1,7 +1,7 @@
 with t as(
-    select vendor_id, 'Green' as taxi_type from {{ source("curated","green_taxi") }} group by vendor_id
+    select vendor_id, 'Green' as taxi_type from {{ ref("green_taxi") }} group by vendor_id
     union
-    select vendor_id, 'Yellow' from {{ source("curated","yellow_taxi") }} group by vendor_id
+    select vendor_id, 'Yellow' from {{ ref("yellow_taxi") }} group by vendor_id
 )
 select nyc_taxi.consumption.vendor_sk_seq.nextval as vendor_sk, 
     vendor_id, 

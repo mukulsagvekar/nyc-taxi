@@ -38,7 +38,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   nyc_taxi:
     curated:
-      +materialized: table
+      +materialized: incremental
     consumption:
       +materialized: table
       +schema: consumption

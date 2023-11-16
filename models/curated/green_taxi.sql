@@ -20,9 +20,16 @@ with t1 as(
         data:total_amount::number(20,2) as total_amount,
         data:payment_type::number as payment_type,
         data:trip_type::number as trip_type,
-        data:congestion_surcharge::number(20,2) as congestion_surcharge
+        data:congestion_surcharge::number(20,2) as congestion_surcharge,
+        load_timestamp,
+        current_timestamp as dbt_update_timestamp
     from {{ source("raw","stg_green_taxi") }}
 
 )
 
 select * from t1
+
+{% if is_incremental() %}
+  -- If this is an incremental model, include the primary key in the unique key
+  WHERE load_timestamp > (SELECT MAX(dbt_update_timestamp) FROM {{ this }})
+{% endif %}

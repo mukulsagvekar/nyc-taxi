@@ -40,5 +40,5 @@ models:
     curated:
       +materialized: incremental
     consumption:
-      +materialized: table
+      +materialized: incremental
       +schema: consumption

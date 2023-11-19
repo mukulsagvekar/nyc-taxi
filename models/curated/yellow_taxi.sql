@@ -21,14 +21,16 @@ with t1 as (
         data:congestion_surcharge::number(20,2) as congestion_surcharge,
         data:airport_fee::number(20,2) as airport_fee,
         load_timestamp,
-        current_timestamp as dbt_update_timestamp
+        to_timestamp_ntz(current_timestamp) as update_timestamp
     from {{ source("raw","stg_yellow_taxi") }}
+    where total_amount > 0 and rate_code_id is not null and rate_code_id != 99 and payment_type != 0 
+    and payment_type is not null and passenger_count != 0 and passenger_count is not null
 
 )
 
-select * from t1
+select * from t1 
 
 {% if is_incremental() %}
   -- If this is an incremental model, include the primary key in the unique key
-  WHERE load_timestamp > (SELECT MAX(dbt_update_timestamp) FROM {{ this }})
+  WHERE load_timestamp > (SELECT MAX(load_timestamp) FROM {{ this }})
 {% endif %}

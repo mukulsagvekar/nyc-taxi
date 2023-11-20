@@ -28,7 +28,8 @@ select
     minute(datetime) as minute,
     second(datetime) as second,
     load_timestamp, 
-    to_timestamp_ntz(current_timestamp) as update_timestamp
+    to_timestamp_ntz(current_timestamp) as update_timestamp,
+    dayname(datetime) as day_name
 from t2
 
 {% if is_incremental() %}

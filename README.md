@@ -21,7 +21,7 @@ Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 <br> Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf
 
 ## Data Model:
-![image](https://github.com/mukulsagvekar/nyc-taxi/assets/83829614/7d504611-5b61-4cfa-8fba-be6b45fe423c)
+![image](https://github.com/mukulsagvekar/nyc-taxi/assets/83829614/0d561f25-f9e2-4a94-b486-39e07b2f2fdf)
 
 ## Dashboard:
 https://public.tableau.com/app/profile/mukul6401/viz/NYCTaxiDataAnalysis_17004981471090/Dashboard1

@@ -1,9 +1,7 @@
 ## Objective: 
 To analyze NYC Taxi data, build a dimentional data model and data pipeline to load and transform data using various tools and technologies, including:
 
-AWS - lambda, S3, 
-
-Data warehouse - Snowflake, 
+AWS - lambda, S3, \n Data warehouse - Snowflake, 
 
 ETL tool - dbt, 
 

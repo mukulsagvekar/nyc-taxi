@@ -5,7 +5,7 @@ To analyze NYC Taxi data, build a dimentional data model and data pipeline to lo
 <br> ETL tool - dbt, 
 <br> Visualization - Tableau
 
-## Arhitecture:
+## Architecture:
 
 ![image](https://github.com/mukulsagvekar/nyc-taxi/assets/83829614/acbedcd6-a683-4fb9-be66-5e9380630c6a)
 

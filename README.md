@@ -11,6 +11,9 @@ Visualization - Tableau
 
 ## Arhitecture:
 
+![image](https://github.com/mukulsagvekar/nyc-taxi/assets/83829614/acbedcd6-a683-4fb9-be66-5e9380630c6a)
+
+![image](https://github.com/mukulsagvekar/nyc-taxi/assets/83829614/72bbf412-aa2f-436e-af54-73234e75a381)
 
 ## Dataset:
 TLC Trip Record Data Yellow and Green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.

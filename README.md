@@ -1,15 +1,21 @@
-Welcome to your new dbt project!
+Objective: To analyze NYC Taxi data, build a dimentional data model and data pipeline to load and transform data using various tools and technologies, including:
+AWS - lambda, S3, 
+Data warehouse - Snowflake, 
+ETL tool - dbt, 
+Visualization - Tableau
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
+# Arhitecture:
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [dbt community](https://getdbt.com/community) to learn from other analytics engineers
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+# Dataset:
+TLC Trip Record Data Yellow and Green taxi trip records include fields capturing pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.
+
+More info about dataset can be found here:
+
+Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+
+# Data Model:
+
+
+# Dashboard:

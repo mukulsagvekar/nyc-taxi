@@ -3,8 +3,8 @@ To analyze NYC Taxi data, build a dimentional data model and data pipeline to lo
 
 AWS - lambda, S3, 
 <br> Data warehouse - Snowflake, 
-ETL tool - dbt, 
-Visualization - Tableau
+<br> ETL tool - dbt, 
+<br> Visualization - Tableau
 
 ## Arhitecture:
 
@@ -18,8 +18,8 @@ TLC Trip Record Data Yellow and Green taxi trip records include fields capturing
 More info about dataset can be found here:
 
 Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-
-Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+<br> Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+<br> Data Dictionary - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf
 
 ## Data Model:
 ![image](https://github.com/mukulsagvekar/nyc-taxi/assets/83829614/7d504611-5b61-4cfa-8fba-be6b45fe423c)
